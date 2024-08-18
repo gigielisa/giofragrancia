@@ -343,6 +343,7 @@ body {
     background: #fff;
     border-radius: 8px;
     padding: 20px;
+    max-height: 98%;
     max-width: 500px;
     width: 90%;
     position: relative;
@@ -377,8 +378,8 @@ body {
 
 .buy-button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 10px;
+    padding: 12px 22px;
     background: #8FBC8F;
     color: #000;
     align-items: center;
@@ -397,10 +398,17 @@ body {
     padding: 2rem 9%;
     background: #E0FFFF;
 }
+.footer-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adiciona espaço entre o texto e a imagem */
+}
+
 .footer-text p{
     font-family: 'Poppins', sans-serif;
     color: var(--bg-color);
-   font-size: 1.8rem; 
+   font-size: 1.8rem;
+   margin: 0;
 }
 .footer-text a{
     margin-left: 10px;
@@ -408,9 +416,9 @@ body {
     color: var(--bg-color);
 }
 
-@media only screen and (max-width: 800px){
-    .home{
-        background-size: 300px 300px;
+@media only screen and (max-width: 1200px){
+    .modal-content p {
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width: 1000px){
@@ -432,7 +440,11 @@ body {
         font-size: 1.7rem; /* Adicione um espaçamento entre a logo e o texto */
     }
 }
-
+@media only screen and (max-width: 800px){
+    .home{
+        background-size: 300px 300px;
+    }
+}
 @media only screen and (max-width: 700px){
     .Sobre {
         flex-direction: column; 
@@ -488,5 +500,8 @@ body {
     .logogi {
         width: 13vw;
  
+    }
+    .modal-content p{
+        font-size: 1.8rem;
     }
 }
